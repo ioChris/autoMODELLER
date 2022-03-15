@@ -1,4 +1,4 @@
-# autoMODELLER-
+# autoMODELLER
 Python script to run MODELLER on several alignment files
 
 #### How to use
