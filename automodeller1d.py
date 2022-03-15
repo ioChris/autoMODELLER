@@ -21,8 +21,8 @@ from modeller import *              # Load standard Modeller classes
 from modeller.automodel import *    # Load the automodel class
 
 # ** Specify the directory where you have the alignment files and the structure of the template protein, keep the '\\' format
-#path1 = 'C:\\Users\\Christos\\Desktop\\test\\dummy_files'
-path1 = 'C:\\Users\\Christos\\Desktop\\test\\marian'
+path1 = 'C:\\Users\\Christos\\Desktop\\test\\dummy_files' # Example folder
+
 aln_file_type = '*.ali'         # ** Choose file type for alignment files (i.e. '*.txt' or '*.ali')
 template_file = '5u1d.ent'      # ** Specify template filename (PDB structure)
 modelNum = 2                   # ** Specify number of models built for each alignment file
