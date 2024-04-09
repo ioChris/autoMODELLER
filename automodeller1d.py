@@ -21,11 +21,12 @@ from modeller import *              # Load standard Modeller classes
 from modeller.automodel import *    # Load the automodel class
 
 # ** Specify the directory where you have the alignment files and the structure of the template protein, keep the '\\' format
-path1 = 'C:\\Users\\Christos\\Desktop\\test\\dummy_files' # Example folder
+#path1 = 'C:\\Users\\Christos\\Desktop\\test\\dummy_files' # Example folder
+path1 = 'C:\\Users\\42077\\Documents\\modeller_test\\test2'
 
 aln_file_type = '*.ali'         # ** Choose file type for alignment files (i.e. '*.txt' or '*.ali')
-template_file = '5u1d.ent'      # ** Specify template filename (PDB structure)
-modelNum = 2                   # ** Specify number of models built for each alignment file
+template_file = '3fxi.pdb'      # ** Specify template filename (PDB structure)
+modelNum = 1                   # ** Specify number of models built for each alignment file
 
 # Turn the modeller script into a function
 # Homology modeling by the automodel class
@@ -70,6 +71,7 @@ for file1 in glob.glob(aln_file_type):
         # Run modeller
         automodeller(file1, template_noExt, new_path, modelNum, alnfile)
         os.chdir(path1)
+
     elif os.path.exists(new_path):
         # Copy the alignment and template files in the new folder
         shutil.copy(file1, new_path)
